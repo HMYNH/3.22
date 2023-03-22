@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include"game.h"
-//void M(int arr[], int H)        //ÓĞĞòÊı×ÖÅÅĞò
+//void M(int arr[], int H)        //æœ‰åºæ•°å­—æ’åº
 //{
 //	int i = 0;
 //	for (i = 0; i < H - 1; i++)
@@ -26,20 +26,20 @@
 //	}
 //	return 0;
 //}
-//int main()                            //Êı×éÃûÊÇÊ×ÔªËØµØÖ·
+//int main()                            //æ•°ç»„åæ˜¯é¦–å…ƒç´ åœ°å€
 //{
 //	int arr[] = { 1,2,3,4,5 };
-//	int sz = sizeof(arr) / sizeof(arr[0]);//sizeof(Êı×éÃû)-Êı×éÃû±íÊ¾Õû¸öÊı×é£¬¼ÆËãµÄÊÇÕû¸öÊı×éµÄ´óĞ¡µ¥Î»ÊÇ×Ö½Ú
+//	int sz = sizeof(arr) / sizeof(arr[0]);//sizeof(æ•°ç»„å)-æ•°ç»„åè¡¨ç¤ºæ•´ä¸ªæ•°ç»„ï¼Œè®¡ç®—çš„æ˜¯æ•´ä¸ªæ•°ç»„çš„å¤§å°å•ä½æ˜¯å­—èŠ‚
 //	printf("%p\n", arr);
 //	printf("%p\n",&arr[0]);
-//	printf("%p\n",&arr);//&Êı×éÃû£¬´ú±íÕû¸öÊı×é£¬È¡³öµÄÊÇÕû¸öÊı×éµÄµØÖ· 
+//	printf("%p\n",&arr);//&æ•°ç»„åï¼Œä»£è¡¨æ•´ä¸ªæ•°ç»„ï¼Œå–å‡ºçš„æ˜¯æ•´ä¸ªæ•°ç»„çš„åœ°å€ 
 //	printf("%p\n", arr+1);
 //	printf("%p\n", &arr[0]+1);
 //	printf("%p\n", &arr+1);
 //	printf("%p\n", *arr);
 //	return 0;
 //}
-void H()
+void H()                       //ä¸‰å­æ£‹æ¸¸æˆ
 {
 	printf("******************************\n");
 	printf("***     1. piay   0. exit   **\n");
@@ -57,19 +57,19 @@ void test()
 	do
 	{
 		H();
-		printf("ÇëÑ¡Ôñ£º>");
+		printf("è¯·é€‰æ‹©ï¼š>");
 		scanf("%d", &M);
 		switch (M)
 		{
 		case 1:
-		/*	printf("Èı×ÓÆå\n");*/
+		/*	printf("ä¸‰å­æ£‹\n");*/
 			game();
 			break;
 		case 0:
-			printf("ÍË³öÓÎÏ·\n");
+			printf("é€€å‡ºæ¸¸æˆ\n");
 			break;
 		default:
-			printf("Ñ¡Ôñ´íÎó£¬ÖØĞÂÑ¡Ôñ\n");
+			printf("é€‰æ‹©é”™è¯¯ï¼Œé‡æ–°é€‰æ‹©\n");
 			break;
 		}
 	} while (M);
